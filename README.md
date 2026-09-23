@@ -149,7 +149,7 @@ and some SPIFFS/LittleFS left over:
 Some filesystem space **must** remain, or settings and sequence persistence
 fails silently.
 
-Open **`StringArt_Nema17_GUI/StringArt_Nema17_GUI/StringArt_Nema17_GUI.ino`**
+Open **`StringArt_Nema17_A4899_OLED_SG90/StringArt_Nema17_A4899_OLED_SG90.ino`**
 — the inner folder — and upload. Arduino requires a sketch to live in a folder
 of the same name, which is why it is nested; the documentation and tests sit
 outside it so the IDE does not try to compile them. All four files in that
@@ -333,10 +333,18 @@ This project builds on other people's work. Full texts are in
 
 - **Cropper.js** 1.6.1 by **Chen Fengyuan** — MIT. Bundled into the web page,
   unmodified, with its copyright banner.
+  
 - **5×7 font** ("glcdfont") by **Adafruit Industries**, from
   Adafruit-GFX-Library — BSD 2-Clause. The OLED driver around it was written
   for this project.
+  
 - **WiFiManager** by **tzapu** — MIT, used as a library.
+
 - **ESP32Servo** by **Kevin Harrington** — LGPL-2.1, used as a library.
+
 - **String Art Studio**, the base template designer and the chord generator by
   **Chanchal Sakarde**.
+  
+- **Complete Design and Coding** : Chanchal Sakarde. All Copy Rights Reserved.
+
+  
