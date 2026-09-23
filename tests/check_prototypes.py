@@ -24,7 +24,7 @@ import sys
 import pathlib
 
 SKETCH = (pathlib.Path(__file__).resolve().parent.parent
-          / "StringArt_Nema17_GUI" / "StringArt_Nema17_GUI.ino")
+          / "StringArt_Nema17_A4899_OLED_SG90" / "StringArt_Nema17_A4899_OLED_SG90.ino")
 
 # enum Foo {, struct Foo {, class Foo {, typedef ... Foo;
 TYPE_DEF = re.compile(r"^\s*(?:enum|struct|class)\s+(?:class\s+)?([A-Za-z_]\w*)\s*[{:]")

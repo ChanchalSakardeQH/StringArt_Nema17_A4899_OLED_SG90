@@ -1,7 +1,7 @@
 # StringArt CNC — Technical Setup Guide
 
 **Project:** StringArt CNC Wi-Fi Controller  
-**Firmware:** `StringArt_Nema17_GUI.ino`  
+**Firmware:** `StringArt_Nema17_A4899_OLED_SG90.ino`  
 **Controller:** ESP32 WROOM-32, 38-pin development board  
 **Stepper:** NEMA17  
 **Driver:** A4988  

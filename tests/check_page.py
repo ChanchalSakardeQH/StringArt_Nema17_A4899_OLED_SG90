@@ -22,9 +22,9 @@ import tempfile
 import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
-ROOT = HERE.parent / "StringArt_Nema17_GUI"
+ROOT = HERE.parent / "StringArt_Nema17_A4899_OLED_SG90"
 PAGE_H = ROOT / "web_page.h"
-SKETCH = ROOT / "StringArt_Nema17_GUI.ino"
+SKETCH = ROOT / "StringArt_Nema17_A4899_OLED_SG90.ino"
 
 raw = PAGE_H.read_text(encoding="utf-8", errors="replace")
 m = re.search(r'R"STRINGARTPAGE\((.*)\)STRINGARTPAGE"', raw, re.S)

@@ -14,6 +14,18 @@ All notable changes to the String Art CNC firmware and its documentation.
 
 ---
 
+## [1.1] — 2026-09-23
+
+### Added
+
+- **Wood You Love It branding in the interface.** The logo sits in the top bar with `www.woodyouloveit.com` and `www.wooduloveit.com` beside it, both linking to the site, and a credit line above the license notice in the sidebar footer.
+
+  The artwork is black with a single pink accent, so it disappears against the dark theme, and inverting it would turn the heart cyan. It sits on its own white chip instead, which keeps the brand colours exactly right in both themes. Embedded as a 440 × 73 base64 PNG quantised to 32 colours — about 8.6 KB, small enough not to matter against a 214 KB page, and it means the logo loads with no network and no second request.
+
+  On narrow screens the URL text drops out and the mark shrinks, so the state pill keeps its place.
+
+---
+
 ## [1.0] — 2026-09-23
 
 First release. An ESP32 WROOM-32 drives a NEMA17 through an A4988, two SG90 servos and a drill motor, homes against a limit switch, and serves the whole String Art Studio interface from its own flash.

@@ -1,0 +1,791 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1470" height="1054" viewBox="0 0 1470 1054">
+<rect width="1470" height="1054" fill="#ffffff"/>
+<text x="112" y="46" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="30" fill="#1c1a17" text-anchor="start" font-weight="700">String Art CNC — Perfboard Layout</text>
+<text x="112" y="64" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="14" fill="#6b6459" text-anchor="start" font-weight="normal">24 × 18 holes on 2.54 mm pitch  ·  61 × 46 mm  ·  fits a stock 70 × 50 mm board  ·  viewed from the COMPONENT side</text>
+<rect x="112" y="112" width="816" height="612" rx="6" fill="#e7dfc9" stroke="#b3a887" stroke-width="2"/>
+<text x="129.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">A</text>
+<text x="163.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">B</text>
+<text x="197.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">C</text>
+<text x="231.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">D</text>
+<text x="265.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">E</text>
+<text x="299.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">F</text>
+<text x="333.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">G</text>
+<text x="367.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">H</text>
+<text x="401.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">I</text>
+<text x="435.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">J</text>
+<text x="469.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">K</text>
+<text x="503.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">L</text>
+<text x="537.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">M</text>
+<text x="571.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">N</text>
+<text x="605.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">O</text>
+<text x="639.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">P</text>
+<text x="673.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">Q</text>
+<text x="707.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">R</text>
+<text x="741.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">S</text>
+<text x="775.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">T</text>
+<text x="809.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">U</text>
+<text x="843.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">V</text>
+<text x="877.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">W</text>
+<text x="911.0" y="92" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="middle" font-weight="normal">X</text>
+<text x="100" y="133.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">1</text>
+<text x="100" y="167.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">2</text>
+<text x="100" y="201.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">3</text>
+<text x="100" y="235.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">4</text>
+<text x="100" y="269.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">5</text>
+<text x="100" y="303.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">6</text>
+<text x="100" y="337.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">7</text>
+<text x="100" y="371.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">8</text>
+<text x="100" y="405.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">9</text>
+<text x="100" y="439.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">10</text>
+<text x="100" y="473.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">11</text>
+<text x="100" y="507.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">12</text>
+<text x="100" y="541.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">13</text>
+<text x="100" y="575.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">14</text>
+<text x="100" y="609.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">15</text>
+<text x="100" y="643.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">16</text>
+<text x="100" y="677.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">17</text>
+<text x="100" y="711.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#8a8172" text-anchor="end" font-weight="normal">18</text>
+<circle cx="129.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="129.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="163.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="197.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="231.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="265.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="299.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="333.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="367.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="401.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="435.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="469.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="503.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="537.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="571.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="605.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="639.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="673.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="707.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="741.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="775.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="809.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="843.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="877.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="129.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="163.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="197.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="231.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="265.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="299.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="333.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="367.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="401.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="435.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="469.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="503.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="537.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="571.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="605.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="639.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="673.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<circle cx="911.0" cy="707.0" r="3.4" fill="#ffffff" stroke="#b3a887" stroke-width="1"/>
+<line x1="503.0" y1="639.0" x2="775.0" y2="639.0" stroke="#8e44ad" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+<text x="487.0" y="644.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="13" fill="#8e44ad" text-anchor="end" font-weight="700">+3V3</text>
+<line x1="129.0" y1="673.0" x2="911.0" y2="673.0" stroke="#e08a1e" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+<text x="113.0" y="678.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="13" fill="#e08a1e" text-anchor="end" font-weight="700">+5V</text>
+<line x1="129.0" y1="707.0" x2="911.0" y2="707.0" stroke="#2b2b2b" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+<text x="113.0" y="712.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="13" fill="#2b2b2b" text-anchor="end" font-weight="700">GND</text>
+<rect x="148.72" y="114.72" width="28.56" height="504.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="163.0" cy="129.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="133.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">VIN</text>
+<circle cx="163.0" cy="163.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="167.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<circle cx="163.0" cy="197.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="201.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D13</text>
+<circle cx="163.0" cy="231.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="235.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D12</text>
+<circle cx="163.0" cy="265.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="269.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D14</text>
+<circle cx="163.0" cy="299.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="303.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D27</text>
+<circle cx="163.0" cy="333.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="337.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D26</text>
+<circle cx="163.0" cy="367.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="371.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D25</text>
+<circle cx="163.0" cy="401.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="405.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D33</text>
+<circle cx="163.0" cy="435.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="439.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D32</text>
+<circle cx="163.0" cy="469.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="473.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D35</text>
+<circle cx="163.0" cy="503.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="507.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D34</text>
+<circle cx="163.0" cy="537.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="541.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">VN</text>
+<circle cx="163.0" cy="571.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="575.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">VP</text>
+<circle cx="163.0" cy="605.0" r="4.6" fill="#4a6fa5"/>
+<text x="151.0" y="609.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">EN</text>
+<text x="163.0" y="100.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">ESP32 DevKit V1 · 1×15 female</text>
+<rect x="488.72" y="114.72" width="28.56" height="504.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="503.0" cy="129.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="133.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">3V3</text>
+<circle cx="503.0" cy="163.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="167.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<circle cx="503.0" cy="197.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="201.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D15</text>
+<circle cx="503.0" cy="231.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="235.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D2</text>
+<circle cx="503.0" cy="265.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="269.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D4</text>
+<circle cx="503.0" cy="299.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="303.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">RX2</text>
+<circle cx="503.0" cy="333.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="337.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">TX2</text>
+<circle cx="503.0" cy="367.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="371.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D5</text>
+<circle cx="503.0" cy="401.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="405.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D18</text>
+<circle cx="503.0" cy="435.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="439.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D19</text>
+<circle cx="503.0" cy="469.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="473.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D21</text>
+<circle cx="503.0" cy="503.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="507.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">RX0</text>
+<circle cx="503.0" cy="537.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="541.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">TX0</text>
+<circle cx="503.0" cy="571.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="575.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D22</text>
+<circle cx="503.0" cy="605.0" r="4.6" fill="#4a6fa5"/>
+<text x="491.0" y="609.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">D23</text>
+<rect x="590.72" y="114.72" width="28.56" height="130.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="605.0" cy="129.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="133.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">STEP</text>
+<circle cx="605.0" cy="163.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="167.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">DIR</text>
+<circle cx="605.0" cy="197.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="201.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">EN</text>
+<circle cx="605.0" cy="231.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="235.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<text x="605.0" y="100.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">A4988 board</text>
+<rect x="590.72" y="284.72" width="28.56" height="96.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="605.0" cy="299.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="303.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<circle cx="605.0" cy="333.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="337.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">+5V</text>
+<circle cx="605.0" cy="367.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="371.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">SIG</text>
+<text x="605.0" y="270.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">Feeder SG90</text>
+<rect x="590.72" y="420.72" width="28.56" height="96.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="605.0" cy="435.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="439.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<circle cx="605.0" cy="469.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="473.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">+5V</text>
+<circle cx="605.0" cy="503.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="507.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">SIG</text>
+<text x="605.0" y="406.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">Drill SG90</text>
+<rect x="590.72" y="556.72" width="28.56" height="62.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="605.0" cy="571.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="575.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">SIG</text>
+<circle cx="605.0" cy="605.0" r="4.6" fill="#4a6fa5"/>
+<text x="593.0" y="609.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<text x="605.0" y="542.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">Drill MOSFET</text>
+<rect x="726.72" y="114.72" width="28.56" height="130.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="741.0" cy="129.0" r="4.6" fill="#4a6fa5"/>
+<text x="729.0" y="133.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<circle cx="741.0" cy="163.0" r="4.6" fill="#4a6fa5"/>
+<text x="729.0" y="167.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">3V3</text>
+<circle cx="741.0" cy="197.0" r="4.6" fill="#4a6fa5"/>
+<text x="729.0" y="201.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">SDA</text>
+<circle cx="741.0" cy="231.0" r="4.6" fill="#4a6fa5"/>
+<text x="729.0" y="235.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">SCL</text>
+<text x="741.0" y="100.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">0.96" OLED</text>
+<rect x="726.72" y="284.72" width="28.56" height="62.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="741.0" cy="299.0" r="4.6" fill="#4a6fa5"/>
+<text x="729.0" y="303.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">LIM</text>
+<circle cx="741.0" cy="333.0" r="4.6" fill="#4a6fa5"/>
+<text x="729.0" y="337.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<text x="741.0" y="270.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">Limit switch</text>
+<rect x="794.72" y="386.72" width="28.56" height="96.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="809.0" cy="401.0" r="4.6" fill="#4a6fa5"/>
+<text x="797.0" y="405.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">+5V</text>
+<circle cx="809.0" cy="435.0" r="4.6" fill="#4a6fa5"/>
+<circle cx="809.0" cy="469.0" r="4.6" fill="#4a6fa5"/>
+<text x="797.0" y="473.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">GND</text>
+<text x="809.0" y="372.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">5 V in (screw)</text>
+<rect x="794.72" y="522.72" width="28.56" height="96.56" rx="5" fill="#fdf9ef" stroke="#4a6fa5" stroke-width="2"/>
+<circle cx="809.0" cy="537.0" r="4.6" fill="#4a6fa5"/>
+<text x="797.0" y="541.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">+</text>
+<circle cx="809.0" cy="571.0" r="4.6" fill="#4a6fa5"/>
+<circle cx="809.0" cy="605.0" r="4.6" fill="#4a6fa5"/>
+<text x="797.0" y="609.0" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="11" fill="#1c1a17" text-anchor="end" font-weight="normal">−</text>
+<text x="809.0" y="508.72" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="middle" font-weight="700">470 µF 10 V</text>
+<text x="333.0" y="713.0" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#b8541c" text-anchor="middle" font-weight="700">USB end  ↑  row 1</text>
+<line x1="163.0" y1="129.0" x2="163.0" y2="673.0" stroke="#e08a1e" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="129.0" r="3" fill="#e08a1e"/>
+<circle cx="163.0" cy="673.0" r="3" fill="#e08a1e"/>
+<line x1="163.0" y1="163.0" x2="163.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="163.0" r="3" fill="#2b2b2b"/>
+<circle cx="163.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="503.0" y1="163.0" x2="469.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="503.0" cy="163.0" r="3" fill="#2b2b2b"/>
+<circle cx="469.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="503.0" y1="129.0" x2="503.0" y2="639.0" stroke="#8e44ad" stroke-width="2.6" opacity="0.85"/>
+<circle cx="503.0" cy="129.0" r="3" fill="#8e44ad"/>
+<circle cx="503.0" cy="639.0" r="3" fill="#8e44ad"/>
+<line x1="163.0" y1="231.0" x2="605.0" y2="129.0" stroke="#1f6fb2" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="231.0" r="3" fill="#1f6fb2"/>
+<circle cx="605.0" cy="129.0" r="3" fill="#1f6fb2"/>
+<line x1="163.0" y1="265.0" x2="605.0" y2="163.0" stroke="#1f6fb2" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="265.0" r="3" fill="#1f6fb2"/>
+<circle cx="605.0" cy="163.0" r="3" fill="#1f6fb2"/>
+<line x1="163.0" y1="333.0" x2="605.0" y2="197.0" stroke="#1f6fb2" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="333.0" r="3" fill="#1f6fb2"/>
+<circle cx="605.0" cy="197.0" r="3" fill="#1f6fb2"/>
+<line x1="605.0" y1="231.0" x2="571.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="605.0" cy="231.0" r="3" fill="#2b2b2b"/>
+<circle cx="571.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="503.0" y1="401.0" x2="605.0" y2="367.0" stroke="#c0392b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="503.0" cy="401.0" r="3" fill="#c0392b"/>
+<circle cx="605.0" cy="367.0" r="3" fill="#c0392b"/>
+<line x1="605.0" y1="299.0" x2="639.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="605.0" cy="299.0" r="3" fill="#2b2b2b"/>
+<circle cx="639.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="605.0" y1="333.0" x2="639.0" y2="673.0" stroke="#e08a1e" stroke-width="2.6" opacity="0.85"/>
+<circle cx="605.0" cy="333.0" r="3" fill="#e08a1e"/>
+<circle cx="639.0" cy="673.0" r="3" fill="#e08a1e"/>
+<line x1="503.0" y1="435.0" x2="605.0" y2="503.0" stroke="#c0392b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="503.0" cy="435.0" r="3" fill="#c0392b"/>
+<circle cx="605.0" cy="503.0" r="3" fill="#c0392b"/>
+<line x1="605.0" y1="435.0" x2="673.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="605.0" cy="435.0" r="3" fill="#2b2b2b"/>
+<circle cx="673.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="605.0" y1="469.0" x2="673.0" y2="673.0" stroke="#e08a1e" stroke-width="2.6" opacity="0.85"/>
+<circle cx="605.0" cy="469.0" r="3" fill="#e08a1e"/>
+<circle cx="673.0" cy="673.0" r="3" fill="#e08a1e"/>
+<line x1="163.0" y1="367.0" x2="605.0" y2="571.0" stroke="#b8541c" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="367.0" r="3" fill="#b8541c"/>
+<circle cx="605.0" cy="571.0" r="3" fill="#b8541c"/>
+<line x1="605.0" y1="605.0" x2="707.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="605.0" cy="605.0" r="3" fill="#2b2b2b"/>
+<circle cx="707.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="503.0" y1="469.0" x2="741.0" y2="197.0" stroke="#0f8a7a" stroke-width="2.6" opacity="0.85"/>
+<circle cx="503.0" cy="469.0" r="3" fill="#0f8a7a"/>
+<circle cx="741.0" cy="197.0" r="3" fill="#0f8a7a"/>
+<line x1="503.0" y1="571.0" x2="741.0" y2="231.0" stroke="#0f8a7a" stroke-width="2.6" opacity="0.85"/>
+<circle cx="503.0" cy="571.0" r="3" fill="#0f8a7a"/>
+<circle cx="741.0" cy="231.0" r="3" fill="#0f8a7a"/>
+<line x1="741.0" y1="163.0" x2="741.0" y2="639.0" stroke="#8e44ad" stroke-width="2.6" opacity="0.85"/>
+<circle cx="741.0" cy="163.0" r="3" fill="#8e44ad"/>
+<circle cx="741.0" cy="639.0" r="3" fill="#8e44ad"/>
+<line x1="741.0" y1="129.0" x2="775.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="741.0" cy="129.0" r="3" fill="#2b2b2b"/>
+<circle cx="775.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="163.0" y1="299.0" x2="741.0" y2="299.0" stroke="#1f6fb2" stroke-width="2.6" opacity="0.85"/>
+<circle cx="163.0" cy="299.0" r="3" fill="#1f6fb2"/>
+<circle cx="741.0" cy="299.0" r="3" fill="#1f6fb2"/>
+<line x1="741.0" y1="333.0" x2="809.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="741.0" cy="333.0" r="3" fill="#2b2b2b"/>
+<circle cx="809.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="809.0" y1="401.0" x2="877.0" y2="673.0" stroke="#e08a1e" stroke-width="2.6" opacity="0.85"/>
+<circle cx="809.0" cy="401.0" r="3" fill="#e08a1e"/>
+<circle cx="877.0" cy="673.0" r="3" fill="#e08a1e"/>
+<line x1="809.0" y1="469.0" x2="877.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="809.0" cy="469.0" r="3" fill="#2b2b2b"/>
+<circle cx="877.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<line x1="809.0" y1="537.0" x2="843.0" y2="673.0" stroke="#e08a1e" stroke-width="2.6" opacity="0.85"/>
+<circle cx="809.0" cy="537.0" r="3" fill="#e08a1e"/>
+<circle cx="843.0" cy="673.0" r="3" fill="#e08a1e"/>
+<line x1="809.0" y1="605.0" x2="843.0" y2="707.0" stroke="#2b2b2b" stroke-width="2.6" opacity="0.85"/>
+<circle cx="809.0" cy="605.0" r="3" fill="#2b2b2b"/>
+<circle cx="843.0" cy="707.0" r="3" fill="#2b2b2b"/>
+<text x="968" y="118" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="15" fill="#1c1a17" text-anchor="start" font-weight="700">WIRE LIST</text>
+<text x="968" y="138" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="11.5" fill="#6b6459" text-anchor="start" font-weight="normal">Insulated wire, component side unless noted.</text>
+<circle cx="974" cy="160" r="4" fill="#e08a1e"/>
+<text x="986" y="164" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B1 → B17   +5V</text>
+<text x="1218" y="164" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.VIN → rail</text>
+<circle cx="974" cy="179" r="4" fill="#2b2b2b"/>
+<text x="986" y="183" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B2 → B18   GND</text>
+<text x="1218" y="183" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.GND → rail</text>
+<circle cx="974" cy="198" r="4" fill="#2b2b2b"/>
+<text x="986" y="202" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  L2 → K18   GND</text>
+<text x="1218" y="202" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-R.GND → rail</text>
+<circle cx="974" cy="217" r="4" fill="#8e44ad"/>
+<text x="986" y="221" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  L1 → L16   +3V3</text>
+<text x="1218" y="221" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-R.3V3 → rail</text>
+<circle cx="974" cy="236" r="4" fill="#1f6fb2"/>
+<text x="986" y="240" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B4 → O1    STEP</text>
+<text x="1218" y="240" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.D12 → J1.STEP</text>
+<circle cx="974" cy="255" r="4" fill="#1f6fb2"/>
+<text x="986" y="259" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B5 → O2    DIR</text>
+<text x="1218" y="259" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.D14 → J1.DIR</text>
+<circle cx="974" cy="274" r="4" fill="#1f6fb2"/>
+<text x="986" y="278" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B7 → O3    EN</text>
+<text x="1218" y="278" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.D26 → J1.EN</text>
+<circle cx="974" cy="293" r="4" fill="#2b2b2b"/>
+<text x="986" y="297" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  O4 → N18   GND</text>
+<text x="1218" y="297" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J1.GND → rail</text>
+<circle cx="974" cy="312" r="4" fill="#c0392b"/>
+<text x="986" y="316" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  L9 → O8    SERVO_FEED</text>
+<text x="1218" y="316" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-R.D18 → J2.SIG</text>
+<circle cx="974" cy="331" r="4" fill="#2b2b2b"/>
+<text x="986" y="335" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  O6 → P18   GND</text>
+<text x="1218" y="335" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J2.GND → rail</text>
+<circle cx="974" cy="350" r="4" fill="#e08a1e"/>
+<text x="986" y="354" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  O7 → P17   +5V</text>
+<text x="1218" y="354" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J2.+5V → rail</text>
+<circle cx="974" cy="369" r="4" fill="#c0392b"/>
+<text x="986" y="373" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> L10 → O12   SERVO_DRILL</text>
+<text x="1218" y="373" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-R.D19 → J3.SIG</text>
+<circle cx="974" cy="388" r="4" fill="#2b2b2b"/>
+<text x="986" y="392" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> O10 → Q18   GND</text>
+<text x="1218" y="392" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J3.GND → rail</text>
+<circle cx="974" cy="407" r="4" fill="#e08a1e"/>
+<text x="986" y="411" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> O11 → Q17   +5V</text>
+<text x="1218" y="411" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J3.+5V → rail</text>
+<circle cx="974" cy="426" r="4" fill="#b8541c"/>
+<text x="986" y="430" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B8 → O14   DRILL_SIG</text>
+<text x="1218" y="430" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.D25 → J4.SIG</text>
+<circle cx="974" cy="445" r="4" fill="#2b2b2b"/>
+<text x="986" y="449" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> O15 → R18   GND</text>
+<text x="1218" y="449" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J4.GND → rail</text>
+<circle cx="974" cy="464" r="4" fill="#0f8a7a"/>
+<text x="986" y="468" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> L11 → S3    SDA</text>
+<text x="1218" y="468" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-R.D21 → J5.SDA</text>
+<circle cx="974" cy="483" r="4" fill="#0f8a7a"/>
+<text x="986" y="487" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> L14 → S4    SCL</text>
+<text x="1218" y="487" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-R.D22 → J5.SCL</text>
+<circle cx="974" cy="502" r="4" fill="#8e44ad"/>
+<text x="986" y="506" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  S2 → S16   +3V3</text>
+<text x="1218" y="506" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J5.3V3 → rail</text>
+<circle cx="974" cy="521" r="4" fill="#2b2b2b"/>
+<text x="986" y="525" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  S1 → T18   GND</text>
+<text x="1218" y="525" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J5.GND → rail</text>
+<circle cx="974" cy="540" r="4" fill="#1f6fb2"/>
+<text x="986" y="544" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  B6 → S6    LIMIT</text>
+<text x="1218" y="544" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">ESP-L.D27 → J6.LIM</text>
+<circle cx="974" cy="559" r="4" fill="#2b2b2b"/>
+<text x="986" y="563" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  S7 → U18   GND</text>
+<text x="1218" y="563" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J6.GND → rail</text>
+<circle cx="974" cy="578" r="4" fill="#e08a1e"/>
+<text x="986" y="582" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">  U9 → W17   +5V</text>
+<text x="1218" y="582" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J7.+5V → rail</text>
+<circle cx="974" cy="597" r="4" fill="#2b2b2b"/>
+<text x="986" y="601" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> U11 → W18   GND</text>
+<text x="1218" y="601" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">J7.GND → rail</text>
+<circle cx="974" cy="616" r="4" fill="#e08a1e"/>
+<text x="986" y="620" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> U13 → V17   +5V</text>
+<text x="1218" y="620" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">C1.+ → rail</text>
+<circle cx="974" cy="635" r="4" fill="#2b2b2b"/>
+<text x="986" y="639" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal"> U15 → V18   GND</text>
+<text x="1218" y="639" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="10.5" fill="#8a8172" text-anchor="start" font-weight="normal">C1.− → rail</text>
+<text x="968" y="672" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="13" fill="#1c1a17" text-anchor="start" font-weight="700">BUS RAILS — bare tinned wire</text>
+<circle cx="974" cy="688" r="4" fill="#8e44ad"/>
+<text x="986" y="692" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">row 16: L16 → T16   +3V3</text>
+<circle cx="974" cy="707" r="4" fill="#e08a1e"/>
+<text x="986" y="711" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">row 17: A17 → X17   +5V</text>
+<circle cx="974" cy="726" r="4" fill="#2b2b2b"/>
+<text x="986" y="730" font-family="'IBM Plex Mono',Menlo,Consolas,monospace" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">row 18: A18 → X18   GND</text>
+<rect x="112" y="768" width="1196" height="238" rx="8" fill="#fbf8f2" stroke="#c9c2b6"/>
+<text x="132" y="794" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="13" fill="#1c1a17" text-anchor="start" font-weight="700">BUILD NOTES</text>
+<text x="132" y="820" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">· Row-spacing does not matter here. Solder the two 1×15 female strips wherever YOUR DevKit sits —</text>
+<text x="132" y="837" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">     if it is 22.86 mm rather than 25.4 mm, put the right-hand strip on column K instead of L and every</text>
+<text x="132" y="854" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">     wire to it shifts one hole. Nothing else changes. Fit the strips before any wire.</text>
+<text x="132" y="871" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">· Wires from the left strip (column B) cross under the ESP32. Run them on the solder side; the module</text>
+<text x="132" y="888" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">     stands clear on its headers, so there is nothing to short against.</text>
+<text x="132" y="905" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">· Only 5 V and signals are on this board. The A4988 expansion board and the drill MOSFET module each</text>
+<text x="132" y="922" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">     take 12 V on their own terminals — no motor current passes through here.</text>
+<text x="132" y="939" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">· C1 (470 µF) sits across the 5 V rail beside the servo headers. Two SG90s starting together is exactly</text>
+<text x="132" y="956" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">     what browns out an ESP32, and the cap is the cheapest fix. Watch the polarity: the stripe goes to GND.</text>
+<text x="132" y="973" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">· Servo headers are GND / +5V / SIG top to bottom — brown, red, orange. Check against your leads.</text>
+<text x="132" y="990" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#1c1a17" text-anchor="start" font-weight="normal">· The limit switch goes to the C and NO terminals. NC reads as permanently triggered.</text>
+<text x="1358" y="1036" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="11" fill="#6b6459" text-anchor="end" font-weight="normal">StringArt_Nema17_GUI  ·  pin assignments verified against StringArt_Nema17_GUI.ino</text>
+</svg>

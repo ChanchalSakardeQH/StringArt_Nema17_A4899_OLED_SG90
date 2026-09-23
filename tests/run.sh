@@ -7,7 +7,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-SKETCH=../StringArt_Nema17_GUI/StringArt_Nema17_GUI.ino
+SKETCH=../StringArt_Nema17_A4899_OLED_SG90/StringArt_Nema17_A4899_OLED_SG90.ino
 BUILD=build
 mkdir -p "$BUILD"
 
@@ -21,7 +21,7 @@ mkdir -p "$BUILD"
 } > "$BUILD/sketch_body.h"
 
 # web_page.h and oled_display.h are included by the sketch and live one level up.
-CXXFLAGS="-std=gnu++17 -I shims -I $BUILD -I ../StringArt_Nema17_GUI"
+CXXFLAGS="-std=gnu++17 -I shims -I $BUILD -I ../StringArt_Nema17_A4899_OLED_SG90"
 
 echo "== prototype lint =="
 python3 check_prototypes.py
