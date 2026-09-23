@@ -30,7 +30,12 @@ runs in your browser.
 - [Credits](#credits)
 
 ---
+Development Setup :
 
+![Development Setup Testing Demo Video](CircuitDiagram/DevelopmentSetupTesting.mp4)
+
+![Development Setup Testing Image](CircuitDiagram/DevelopmentSetupTesting.jfif)
+---
 ## Features
 
 **In the browser**
