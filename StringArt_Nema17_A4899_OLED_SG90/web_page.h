@@ -58,7 +58,7 @@ const char INDEX_HTML[] PROGMEM = R"STRINGARTPAGE(
   Copyright (C) 2026 CHANCHAL SAKARDE.
   SPDX-License-Identifier: GPL-3.0-or-later AND MIT
   Free software under the GNU GPL v3 or later; ABSOLUTELY NO WARRANTY.
-  Source: https://github.com/ChanchalSakardeQH/StringArt_Nema17_A4899_OLED_SG90
+  Source: https://github.com/ChanchalSakardeQH/StringArt-CNC-USING-28BYJ48-EPS8266-SG90
   Bundles Cropper.js 1.6.1 (MIT, Chen Fengyuan) -- banner kept below.
 -->
 <html lang="en">
@@ -1238,7 +1238,7 @@ const char INDEX_HTML[] PROGMEM = R"STRINGARTPAGE(
       It comes with <b>absolutely no warranty</b>. You may share and change it
       under those terms.<br>
       Source code:
-      <a href="https://github.com/ChanchalSakardeQH/StringArt_Nema17_A4899_OLED_SG90" target="_blank" rel="noopener">https://github.com/ChanchalSakardeQH/StringArt_Nema17_A4899_OLED_SG90</a><br>
+      <a href="https://github.com/ChanchalSakardeQH/StringArt-CNC-USING-28BYJ48-EPS8266-SG90" target="_blank" rel="noopener">https://github.com/ChanchalSakardeQH/StringArt-CNC-USING-28BYJ48-EPS8266-SG90</a><br>
       <span class="legal-dim">
         Interface and generator Built for the ESP32 and A4988.
         Includes Cropper.js by Chen Fengyuan (MIT), the 5&times;7 font from
@@ -1823,6 +1823,13 @@ window.NailCount = (function(){
       statLine.textContent = "pins: " + numPins + "    chords: " +
                              (parsed.sequence.length - 1);
       setProgress(100, "Loaded from the machine");
+      const gotPhoto = await loadPhotoFromMachine();
+      if (!quiet && !gotPhoto) {
+        sendMsg.textContent = "Rebuilt from the pattern the machine is running. " +
+          "No photo stored, so the inside of the greeting card will be blank.";
+        sendMsg.className = "msg show";
+        return true;
+      }
       if (!quiet) {
         sendMsg.textContent = "Rebuilt from the pattern the machine is running.";
         sendMsg.className = "msg show ok";
@@ -1913,6 +1920,112 @@ window.NailCount = (function(){
   const CARD_DPI = 150;                       // 1754 x 1240 px, ~9 MB of canvas
   const A4_W_PT = 842, A4_H_PT = 595;         // A4 landscape in PDF points
 
+  // ---- Greeting card ------------------------------------------------------
+  // A4 landscape, folded down the middle: right half is the cover, left half
+  // the inside. Both circles are drawn at the same diameter on the same centre
+  // line, because two portraits of different sizes at different heights is the
+  // single thing that makes a card look homemade rather than made.
+
+  const CARD_INK = "#1a1a1a";
+  const CARD_DIM = "#8a8378";
+  const CARD_RULE = "#c9bfae";
+  const CARD_ACCENT = "#b0703a";
+
+  // A ring of small marks standing in for the nails: decoration that comes
+  // from the subject rather than from a clipart border.
+  function nailRing(g, cx, cy, r, count, dot, colour) {
+    g.save();
+    g.fillStyle = colour;
+    for (let i = 0; i < count; i++) {
+      const a = (i / count) * Math.PI * 2 - Math.PI / 2;
+      g.beginPath();
+      g.arc(cx + Math.cos(a) * r, cy + Math.sin(a) * r, dot, 0, Math.PI * 2);
+      g.fill();
+    }
+    g.restore();
+  }
+
+  // Corner ornament: a few chords across a quarter ring, the same geometry the
+  // machine draws, at a size that reads as a flourish.
+  function cornerFlourish(g, x, y, size, flipX, flipY, colour) {
+    g.save();
+    g.translate(x, y);
+    g.scale(flipX ? -1 : 1, flipY ? -1 : 1);
+    g.strokeStyle = colour;
+    g.lineWidth = Math.max(1, size * 0.008);
+    g.globalAlpha = 0.55;
+    const pts = [];
+    const n = 9;
+    for (let i = 0; i <= n; i++) {
+      const a = (i / n) * (Math.PI / 2);
+      pts.push([Math.cos(a) * size, Math.sin(a) * size]);
+    }
+    for (let i = 0; i <= n; i++) {
+      g.beginPath();
+      g.moveTo(pts[i][0], pts[i][1]);
+      g.lineTo(pts[n - i][0] * 0.12, pts[n - i][1] * 0.12);
+      g.stroke();
+    }
+    g.globalAlpha = 1;
+    g.beginPath();
+    g.arc(0, 0, size, 0, Math.PI / 2);
+    g.stroke();
+    g.restore();
+  }
+
+  // Double rule with the corners left open, so the flourishes sit in the gaps.
+  function panelFrame(g, x0, y0, x1, y1, gap) {
+    g.save();
+    g.strokeStyle = CARD_RULE;
+    for (const [inset, w] of [[0, 2.2], [gap * 0.28, 1]]) {
+      const a = x0 + inset, b = y0 + inset, c2 = x1 - inset, d = y1 - inset;
+      g.lineWidth = w;
+      const cut = gap * 1.9;
+      g.beginPath();
+      g.moveTo(a + cut, b); g.lineTo(c2 - cut, b);
+      g.moveTo(c2, b + cut); g.lineTo(c2, d - cut);
+      g.moveTo(c2 - cut, d); g.lineTo(a + cut, d);
+      g.moveTo(a, d - cut); g.lineTo(a, b + cut);
+      g.stroke();
+    }
+    g.restore();
+  }
+
+  function wrapText(g, text, cx, y, maxW, lineH) {
+    for (const para of text.split("\n")) {
+      let line = "";
+      for (const word of para.split(/\s+/)) {
+        const test = line ? line + " " + word : word;
+        if (g.measureText(test).width > maxW && line) {
+          g.fillText(line, cx, y); y += lineH; line = word;
+        } else { line = test; }
+      }
+      if (line) { g.fillText(line, cx, y); y += lineH; }
+      else { y += lineH * 0.5; }
+    }
+    return y;
+  }
+
+  // The logo is already in the page, decoded, as the top-bar mark -- so the
+  // card reuses that element rather than carrying a second copy of the bytes.
+  function brandImage() {
+    const el = document.querySelector(".brand img");
+    return (el && el.complete && el.naturalWidth) ? el : null;
+  }
+
+  function drawBrand(g, cx, y, width) {
+    const img = brandImage();
+    if (img) {
+      const h = width * (img.naturalHeight / img.naturalWidth);
+      g.drawImage(img, cx - width / 2, y, width, h);
+      y += h + CARD_DPI * 0.13;
+    }
+    g.fillStyle = CARD_DIM;
+    g.font = Math.round(CARD_DPI * 0.085) + "px Georgia, serif";
+    g.textAlign = "center";
+    g.fillText("www.woodyouloveit.com", cx, y);
+  }
+
   function drawCard() {
     const W = Math.round(297 / 25.4 * CARD_DPI);
     const H = Math.round(210 / 25.4 * CARD_DPI);
@@ -1924,66 +2037,99 @@ window.NailCount = (function(){
     g.fillRect(0, 0, W, H);
 
     const half = W / 2;
-    // A landscape sheet folded down the middle keeps both halves upright, so
-    // nothing needs rotating: right half is the cover, left half the inside.
+    const M = CARD_DPI * 0.42;                  // panel margin
+    const gap = CARD_DPI * 0.16;
+
+    // Both panels framed identically, so the fold is the only difference
+    // between them.
+    for (const x0 of [M, half + M * 0.55]) {
+      const x1 = (x0 < half ? half - M * 0.55 : W - M);
+      panelFrame(g, x0, M, x1, H - M, gap);
+      const fs = gap * 1.35;          // must fit the gap the frame leaves
+      const ci = gap * 0.55;
+      cornerFlourish(g, x0 + ci, M + ci, fs, false, false, CARD_ACCENT);
+      cornerFlourish(g, x1 - ci, M + ci, fs, true, false, CARD_ACCENT);
+      cornerFlourish(g, x0 + ci, H - M - ci, fs, false, true, CARD_ACCENT);
+      cornerFlourish(g, x1 - ci, H - M - ci, fs, true, true, CARD_ACCENT);
+    }
+
     if (cardFold.checked) {
       g.save();
-      g.strokeStyle = "#d8d2c8"; g.lineWidth = 1.5; g.setLineDash([9, 9]);
-      g.beginPath(); g.moveTo(half, 40); g.lineTo(half, H - 40); g.stroke();
+      g.strokeStyle = "#ddd6cb"; g.lineWidth = 1.4; g.setLineDash([8, 10]);
+      g.beginPath(); g.moveTo(half, M * 0.5); g.lineTo(half, H - M * 0.5); g.stroke();
       g.restore();
+    }
+
+    // One diameter and one centre line for both portraits.
+    const disc = Math.min(half - CARD_DPI * 1.5, H - CARD_DPI * 2.5);
+    const discY = M + CARD_DPI * 0.62;
+    const leftCx = half / 2;
+    const rightCx = half + half / 2;
+    const title = cardTitle.value.trim();
+
+    function portrait(cx, source, clip) {
+      const x = cx - disc / 2;
+      if (source) {
+        g.save();
+        if (clip) {
+          g.beginPath(); g.arc(cx, discY + disc / 2, disc / 2, 0, Math.PI * 2); g.clip();
+        }
+        g.drawImage(source, x, discY, disc, disc);
+        g.restore();
+      }
+      nailRing(g, cx, discY + disc / 2, disc / 2 + gap * 0.9,
+               72, Math.max(1.1, disc * 0.0035), CARD_RULE);
+      g.strokeStyle = CARD_RULE; g.lineWidth = 1.2;
+      g.beginPath(); g.arc(cx, discY + disc / 2, disc / 2 + gap * 0.35, 0, Math.PI * 2);
+      g.stroke();
     }
 
     // --- cover: the string art ---
-    const artSide = Math.min(half - 150, H - 300);
-    const ax = half + (half - artSide) / 2;
-    const ay = (H - artSide) / 2 - 40;
-    g.drawImage(canvas, ax, ay, artSide, artSide);
+    portrait(rightCx, canvas, true);
 
-    const title = cardTitle.value.trim();
-    g.fillStyle = "#1a1a1a";
+    let y = discY + disc + CARD_DPI * 0.62;
     g.textAlign = "center";
     if (title) {
-      g.font = "600 " + Math.round(CARD_DPI * 0.26) + "px Georgia, 'Times New Roman', serif";
-      g.fillText(title, half + half / 2, ay + artSide + CARD_DPI * 0.52, half - 120);
+      g.fillStyle = CARD_INK;
+      g.font = "600 " + Math.round(CARD_DPI * 0.28) + "px Georgia, 'Times New Roman', serif";
+      g.fillText(title, rightCx, y, half - CARD_DPI);
+      y += CARD_DPI * 0.13;
+      g.strokeStyle = CARD_ACCENT; g.lineWidth = 1.6;
+      g.beginPath();
+      g.moveTo(rightCx - CARD_DPI * 0.45, y); g.lineTo(rightCx + CARD_DPI * 0.45, y);
+      g.stroke();
+      y += CARD_DPI * 0.30;
     }
     if (lastResult) {
-      g.fillStyle = "#8a8378";
-      g.font = Math.round(CARD_DPI * 0.10) + "px Georgia, serif";
+      g.fillStyle = CARD_DIM;
+      g.font = Math.round(CARD_DPI * 0.095) + "px Georgia, serif";
       g.fillText(lastResult.numPins + " nails  \u00b7  " +
-                 (lastResult.sequence.length - 1) + " chords",
-                 half + half / 2, H - CARD_DPI * 0.42);
+                 (lastResult.sequence.length - 1) + " chords", rightCx, y);
     }
+    drawBrand(g, rightCx, H - M - CARD_DPI * 0.62, CARD_DPI * 1.05);
 
     // --- inside: the photo it came from, and the message ---
-    if (croppedCanvas) {
-      const ps = Math.min(half - 320, H - 560);
-      const px = (half - ps) / 2, py = CARD_DPI * 0.75;
-      g.save();
-      g.beginPath(); g.arc(px + ps / 2, py + ps / 2, ps / 2, 0, Math.PI * 2);
-      g.clip();
-      g.drawImage(croppedCanvas, px, py, ps, ps);
-      g.restore();
-      g.strokeStyle = "#ddd6cb"; g.lineWidth = 2;
-      g.beginPath(); g.arc(px + ps / 2, py + ps / 2, ps / 2, 0, Math.PI * 2); g.stroke();
-
-      const msg = cardMsg.value.trim();
-      if (msg) {
-        g.fillStyle = "#2a2a2a";
-        g.font = Math.round(CARD_DPI * 0.155) + "px Georgia, 'Times New Roman', serif";
-        const maxW = half - 260;
-        let y = py + ps + CARD_DPI * 0.55;
-        for (const para of msg.split("\n")) {
-          let line = "";
-          for (const word of para.split(/\s+/)) {
-            const test = line ? line + " " + word : word;
-            if (g.measureText(test).width > maxW && line) {
-              g.fillText(line, half / 2, y); y += CARD_DPI * 0.24; line = word;
-            } else { line = test; }
-          }
-          if (line) { g.fillText(line, half / 2, y); y += CARD_DPI * 0.24; }
-        }
-      }
+    portrait(leftCx, croppedCanvas, true);
+    if (!croppedCanvas) {
+      g.fillStyle = CARD_DIM;
+      g.font = "italic " + Math.round(CARD_DPI * 0.11) + "px Georgia, serif";
+      g.fillText("photo not stored on the machine", leftCx, discY + disc / 2);
     }
+
+    y = discY + disc + CARD_DPI * 0.62;
+    if (title) {
+      g.fillStyle = CARD_INK;
+      g.font = "600 " + Math.round(CARD_DPI * 0.19) + "px Georgia, 'Times New Roman', serif";
+      g.fillText(title, leftCx, y, half - CARD_DPI);
+      y += CARD_DPI * 0.34;
+    }
+    const msg = cardMsg.value.trim();
+    if (msg) {
+      g.fillStyle = "#2a2a2a";
+      g.font = Math.round(CARD_DPI * 0.135) + "px Georgia, 'Times New Roman', serif";
+      wrapText(g, msg, leftCx, y, half - CARD_DPI * 1.4, CARD_DPI * 0.21);
+    }
+
     return c;
   }
 
@@ -2050,6 +2196,50 @@ window.NailCount = (function(){
 
   // ---- Send to THIS machine (same origin -- no address, no CORS needed) --
 
+  // Shrunk hard before sending: the card prints the photo about 45 mm across,
+  // so 480 px is already more than the paper can show, and the ESP32's
+  // filesystem is measured in hundreds of kilobytes.
+  async function sendPhotoToMachine() {
+    if (!croppedCanvas) {
+      await fetch("/photo?clear=1", { method: "POST" });
+      return "";
+    }
+    const N = 480;
+    const c = document.createElement("canvas");
+    c.width = c.height = N;
+    c.getContext("2d").drawImage(croppedCanvas, 0, 0, N, N);
+    const blob = await new Promise((res) => c.toBlob(res, "image/jpeg", 0.72));
+    const fd = new FormData();
+    fd.append("photo", blob, "photo.jpg");
+    const r = await fetch("/photo", { method: "POST", body: fd });
+    if (!r.ok) return " " + (await r.text());
+    return " Photo stored too, so the card prints in full from any device.";
+  }
+
+  // Pull the stored photo back, so a phone that rebuilt the pattern from the
+  // machine can also print the inside of the card.
+  async function loadPhotoFromMachine() {
+    try {
+      const r = await fetch("/photo");
+      if (!r.ok) return false;
+      const blob = await r.blob();
+      const img = await new Promise((res, rej) => {
+        const i = new Image();
+        i.onload = () => res(i);
+        i.onerror = () => rej(new Error("bad image"));
+        i.src = URL.createObjectURL(blob);
+      });
+      const c = document.createElement("canvas");
+      c.width = c.height = img.naturalWidth || 480;
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(img.src);
+      croppedCanvas = c;
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+
   sendBtn.addEventListener("click", async () => {
     sendMsg.className = "msg";
     if (!lastResult) { sendMsg.textContent = "Generate a sequence first."; sendMsg.className = "msg show err"; return; }
@@ -2070,8 +2260,20 @@ window.NailCount = (function(){
         body: lastResult.sequence.join(","),
       });
       if (!r.ok) throw new Error(await r.text());
+
+      // The photo goes with the pattern, so any device that opens the machine
+      // later can print a card with the picture it came from. A pattern sent
+      // without one clears the stored photo: a card carrying a stranger's face
+      // beside your artwork is worse than one carrying none.
+      let photoNote = "";
+      try {
+        photoNote = await sendPhotoToMachine();
+      } catch (err) {
+        photoNote = " The pattern is loaded, but the photo did not store.";
+      }
+
       sendMsg.textContent = "Loaded — " + (lastResult.sequence.length - 1) +
-        " lines. Press Start stringing below.";
+        " lines. Press Start stringing below." + photoNote;
       sendMsg.className = "msg show ok";
       refreshMachine();
     } catch (err) {

@@ -249,6 +249,8 @@ Everything below is editable from **Advanced** and stored in `/config.txt`.
 GET  /              the page
 GET  /status        80-key JSON: state, progress, position, learn, errors
 GET  /pins          the loaded sequence as from,to pairs
+GET  /photo         the source photo, for printing a card from any device
+POST /photo         store it (multipart), or ?clear=1 to remove it
 POST /pins          load a sequence as from,to pairs
 POST /upload        load a flat nail list (what the Studio's Send button posts)
 POST /config        set any adjustable setting by name

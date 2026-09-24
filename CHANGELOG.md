@@ -14,11 +14,50 @@ All notable changes to the String Art CNC firmware and its documentation.
 
 ---
 
+## [1.3] — 2026-09-23
+
+### Changed
+
+#### The greeting card redesigned
+
+- **Both portraits are now the same diameter on the same centre line.** Two pictures of different sizes at different heights is the single thing that made the card look homemade rather than made.
+- **Framed panels**, identical on both halves, with a double rule broken at the corners.
+- **Decoration drawn from the subject.** Each portrait is ringed by 72 small marks standing in for nails, and each corner carries a quarter-arc with chords struck across it — the same geometry the machine draws, at the size of a flourish. Generic clipart borders would have been easier and would have said nothing about what the card is.
+- **Wood You Love It branding** on the cover: the logo and `www.woodyouloveit.com` beneath the title and count. The card reuses the logo element already decoded in the top bar rather than carrying a second copy of the bytes.
+- Title on the cover gains a short accent rule; the inside repeats it smaller above the message, so the two halves read as one piece.
+- When no photo is stored, the inside says so in the circle instead of leaving a blank panel.
+
+Verified by rendering: the card code was extracted and run headlessly against node-canvas with a stand-in photo and pattern, and the output inspected — the layout was adjusted twice on the strength of what it showed, not on what it should have shown.
+
+---
+
+## [1.2] — 2026-09-23
+
+### Fixed
+
+#### A greeting card printed from a second device had no photo inside
+
+Opening the machine on a phone mid-job rebuilds the artwork from `GET /pins`, which works because the pin sequence is all the artwork is. The photo is not: it only ever existed in the browser that cropped it. So the card printed from the phone had the string art on the front and a blank panel inside, with nothing to say why.
+
+The photo now travels with the pattern. **Send to this machine** shrinks the crop to 480 px at quality 0.72 — the card prints it about 45 mm across, so that is already more resolution than the paper can show — and posts it to the new `POST /photo`. Any device that later rebuilds the pattern also pulls it back from `GET /photo`, and prints a complete card.
+
+Three details that matter more than they look:
+
+- **It is stored as a file and streamed both ways.** A JPEG will not survive being carried in an Arduino `String`, which stops at the first zero byte, and buffering one in RAM would cost more heap than the ESP32 can spare.
+- **A pattern sent without a photo clears the stored one** (`POST /photo?clear=1`). Otherwise the next card carries a stranger's face beside your artwork, which is worse than carrying none.
+- **Uploads are refused while a job runs.** The motor task shares this filesystem, and a second spent writing is a second it could spend blocked between lines. Send the photo before pressing start.
+
+A failed photo upload never fails the pattern: the sequence loads, and the message says the card's inside picture is the only thing affected. Rebuilding on a device with no stored photo says so up front rather than letting you discover it in the PDF.
+
+New status key `photoBytes`. Storage caps at 160 kB.
+
+---
+
 ## [1.1] — 2026-09-23
 
 ### Added
 
-- **Wood You Love It branding in the interface.** The logo sits in the top bar with `www.woodyouloveit.com` and `www.wooduloveit.com` beside it, both linking to the site, and a credit line above the license notice in the sidebar footer.
+- **Wood You Love It branding in the interface.** The logo sits in the top bar with `www.woodyouloveit.com` beside it, both linking to the site, and a credit line above the licence notice in the sidebar footer.
 
   The artwork is black with a single pink accent, so it disappears against the dark theme, and inverting it would turn the heart cyan. It sits on its own white chip instead, which keeps the brand colours exactly right in both themes. Embedded as a 440 × 73 base64 PNG quantised to 32 colours — about 8.6 KB, small enough not to matter against a 214 KB page, and it means the logo loads with no network and no second request.
 

@@ -170,6 +170,11 @@ void handleStop();
 void handlePause();
 void handleResume();
 void handleWifiSetup();
+size_t photoSize();
+void photoClear();
+void handlePhotoGet();
+void handlePhotoPost();
+void handlePhotoUpload();
 
 // The two helpers the HTTP handlers use to hand work to the motor task. They
 // take the enums from machine_types.h, which is exactly why that file exists.
@@ -1911,6 +1916,7 @@ void handleStatus() {
   json += "\"calTestFrom\":" + String(calTestFrom) + ",";
   json += "\"calTestTarget\":" + String(calTestTarget) + ",";
   json += "\"calTestNote\":\"" + jsonEscape(calTestNote) + "\",";
+  json += "\"photoBytes\":" + String((unsigned)photoSize()) + ",";
   json += "\"dryRunPending\":" + String(dryRunPending ? "true" : "false") + ",";
   json += "\"dryRunLines\":" + String(dryRunLines) + ",";
   json += "\"stepPulseUs\":" + String(stepPulseUs) + ",";
@@ -2637,6 +2643,104 @@ void handleResume() {
   }
 }
 
+// ---------------------------------------------------------------------------
+//  Source photo
+// ---------------------------------------------------------------------------
+// The picture a pattern came from lives only in the browser that cropped it,
+// so a second device could rebuild the artwork from /pins but had no photo for
+// the inside of the greeting card. Keeping the JPEG here makes the machine the
+// whole job rather than half of it.
+//
+// It is stored as a file and streamed both ways: a JPEG will not survive being
+// carried in an Arduino String, which stops at the first zero byte, and buffering
+// one in RAM would cost more heap than the ESP32 can spare.
+
+const char *PHOTO_PATH = "/photo.jpg";
+const size_t PHOTO_MAX = 160 * 1024;
+
+File photoUploadFile;
+size_t photoUploadBytes = 0;
+bool photoUploadFailed = false;
+
+size_t photoSize() {
+  FsLock lock;
+  if (!LittleFS.exists(PHOTO_PATH)) return 0;
+  File f = LittleFS.open(PHOTO_PATH, "r");
+  if (!f) return 0;
+  size_t n = f.size();
+  f.close();
+  return n;
+}
+
+void photoClear() {
+  FsLock lock;
+  if (LittleFS.exists(PHOTO_PATH)) LittleFS.remove(PHOTO_PATH);
+}
+
+void handlePhotoGet() {
+  sendCorsHeaders();
+  FsLock lock;
+  if (!LittleFS.exists(PHOTO_PATH)) {
+    server.send(404, "text/plain", "No photo stored.");
+    return;
+  }
+  File f = LittleFS.open(PHOTO_PATH, "r");
+  if (!f) { server.send(500, "text/plain", "Could not open the photo."); return; }
+  server.sendHeader("Cache-Control", "no-cache");
+  server.streamFile(f, "image/jpeg");
+  f.close();
+}
+
+// Streamed to the filesystem a chunk at a time. Refused while a job runs: the
+// motor task shares this filesystem, and a second of writing is a second it
+// could spend blocked between lines.
+void handlePhotoUpload() {
+  HTTPUpload &up = server.upload();
+  if (up.status == UPLOAD_FILE_START) {
+    photoUploadBytes = 0;
+    photoUploadFailed = machineBusy();
+    if (photoUploadFailed) return;
+    FsLock lock;
+    if (LittleFS.exists(PHOTO_PATH)) LittleFS.remove(PHOTO_PATH);
+    photoUploadFile = LittleFS.open(PHOTO_PATH, "w");
+    if (!photoUploadFile) photoUploadFailed = true;
+  } else if (up.status == UPLOAD_FILE_WRITE) {
+    if (photoUploadFailed || !photoUploadFile) return;
+    photoUploadBytes += up.currentSize;
+    if (photoUploadBytes > PHOTO_MAX) { photoUploadFailed = true; return; }
+    if (photoUploadFile.write(up.buf, up.currentSize) != up.currentSize) {
+      photoUploadFailed = true;             // filesystem full
+    }
+  } else if (up.status == UPLOAD_FILE_END || up.status == UPLOAD_FILE_ABORTED) {
+    if (photoUploadFile) photoUploadFile.close();
+    if (photoUploadFailed || up.status == UPLOAD_FILE_ABORTED) photoClear();
+  }
+}
+
+void handlePhotoPost() {
+  sendCorsHeaders();
+  // A pattern sent without a photo must clear the old one. Otherwise the next
+  // card carries a stranger's face beside your artwork, which is worse than
+  // carrying none.
+  if (server.hasArg("clear")) {
+    photoClear();
+    server.send(200, "text/plain", "Photo cleared.");
+    return;
+  }
+  if (machineBusy()) {
+    server.send(409, "text/plain", "Machine is busy \u2014 send the photo before starting a job.");
+    return;
+  }
+  if (photoUploadFailed) {
+    server.send(507, "text/plain",
+                "Could not store the photo: it is too large, or the filesystem "
+                "is full. The pattern is fine; only the card's inside picture "
+                "is affected.");
+    return;
+  }
+  server.send(200, "text/plain", "Photo stored (" + String(photoUploadBytes) + " bytes).");
+}
+
 // POST ssid=...&pass=...  joins that router and remembers it.
 // POST forget=1           drops the saved router and stays on the hotspot.
 // Neither reboots: the hotspot is up throughout, so the page you sent this
@@ -2822,6 +2926,9 @@ void setup() {
   server.on("/pause", HTTP_POST, handlePause);
   server.on("/resume", HTTP_POST, handleResume);
   server.on("/wifi-setup", HTTP_POST, handleWifiSetup);
+  server.on("/photo", HTTP_GET, handlePhotoGet);
+  server.on("/photo", HTTP_POST, handlePhotoPost, handlePhotoUpload);
+  server.on("/photo", HTTP_OPTIONS, handleCorsPreflight);
   server.onNotFound(handleNotFound);
   server.begin();
   Serial.println("Web server started.");
